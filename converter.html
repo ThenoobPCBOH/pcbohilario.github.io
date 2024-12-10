@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <title>Value Converter Tool</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="converter_styles.css" />
+    <script src="converter_script.js" defer></script>
+    </head>
+    <body>
+        <main class="main-content">
+            <h1 class="header-title">Value Converter Tool</h1>
+            <div class="number-container">
+                <select id="operation">
+                    <option value="" disabled selected>Select an option</option>
+                    <option value="CTF">Celsius to Fahrenheit</option>
+                    <option value="FTC">Fahrenheit to Celsius</option>
+                    <option value="MTF">Meters to Feet</option>
+                    <option value="FTM">Feet to Meters</option>
+                </select>
+                <div class="input-group">
+                    <label class="label" for="number-input">Enter a Value:</label>
+                    <input type="number" class="number-input" id="num1" step="any">
+                </div>
+                <div class="input-group">
+                    <label class="label" for="number-output">Result:</label>
+                    <input type="number" class="number-input" id="result" step="any" readonly>
+                </div>
+                <button class="button" id="convert">Convert</button>
+            </div>
+            <a href="../index.html" class="link">Back to Home Page</a>
+        </main>
+        <footer>
+        </footer>
+    </body>
+    </html>
