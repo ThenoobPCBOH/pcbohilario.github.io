@@ -1,0 +1,179 @@
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #cb85c3;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  position: relative;
+}
+
+.container {
+  background-color: white;
+  padding: 2.5rem;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 800px;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-size: 2.5rem;
+  color: #333;
+  font-weight: 600;
+}
+
+label {
+  font-weight: 500;
+  color: #333;
+  display: block;
+  margin-top: 0.5rem;
+}
+
+input {
+  width: 100%;
+  padding: 1rem;
+  font-size: 1.1rem;
+  border: 2px solid #e2e8f0;
+  border-radius: 10px;
+  outline: none;
+  margin-bottom: 1rem;
+  transition: all 0.3s ease;
+}
+
+input:focus {
+  border-color: #63257a;
+  box-shadow: 0 0 0 2px rgba(0,123,255,0.1);
+}
+
+button {
+  display: inline-block;
+  font-size: 1.1rem;
+  color: #fff;
+  background-color: #63257a;
+  border: 2px solid #fff;
+  padding: 1rem 2rem;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  margin: 0.5rem 0;
+}
+
+button:hover {
+  background: #500343;
+  color: white;
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.5rem 0;
+  background-color: white;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+thead {
+  background-color: #63257a;
+  color: white;
+}
+
+thead tr td {
+  font-weight: bold;
+  padding: 12px;
+  text-align: left;
+}
+
+tbody tr {
+  border-bottom: 1px solid #e2e8f0;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f1f5f9;
+}
+
+tbody td, tfoot td {
+  padding: 10px;
+  text-align: left;
+}
+
+tfoot {
+  background-color: #f1f5f9;
+  font-weight: bold;
+}
+
+.ndata {
+  text-align: right;
+  font-weight: bold;
+  color: #63257a;
+}
+
+
+dialog {
+  border: none;
+  border-radius: 20px;
+  padding: 2.5rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 90%;
+  width: 400px;
+}
+
+dialog::backdrop {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+dialog h4 {
+  text-align: center;
+  margin-bottom: 1rem;
+  color: #333;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.dlgbuttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.dlgbuttons button {
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+}
+
+.link {
+  display: inline-block;
+  font-size: 1.1rem;
+  text-decoration: none;
+  color: #333;
+  padding: 1rem 2rem;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  margin-top: 1rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.link:hover {
+  background: #500343;
+  color: white;
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
