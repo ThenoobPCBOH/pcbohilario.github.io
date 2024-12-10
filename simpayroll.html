@@ -1,0 +1,100 @@
+ <!DOCTYPE html>
+<html>
+    <head>
+    <title>Simple Payroll</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="simpayroll_styles.css" />
+    <script src="simpayroll_script.js" defer></script>
+    </head>
+<body>
+<h1>Simple Payroll</h1>
+<div class="container">
+  <div>
+    <form id="employeeForm" novalidate>
+      <label for="name">Employee Name</label>
+      <input type="text" id="name" required>
+      <label for="daysworked">Days Worked</label>
+      <input type="number" id="daysworked" required>
+      <label for="dailyrate">Daily Rate (PHP):</label>
+      <input type="number" id="dailyrate" required>
+      <label for="deduction">Deduction Amount (PHP):</label>
+      <input type="number" id="deduction" required>
+      <button type="submit" id="btnsubmit">Submit</button>
+      </form>
+  </div>
+  <table>
+    <thead>
+      <tr>
+        <td>Employee No.</td>
+        <td>Employee Name</td>
+        <td>Days Worked</td>
+        <td>Daily Rate (PHP)</td>
+        <td>Gross Pay (PHP)</td>
+        <td>Deduction Amount (PHP)</td>
+        <td>Net Pay (PHP)</td>
+      </tr>
+    </thead>
+    <tbody id="tablebody">
+    </tbody>
+    <tfoot>
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>Total:</td>
+        <td id="tGrossPay" class="ndata">0.00</td>
+        <td id="tDeduction" class="ndata">0.00</td>
+        <td id="tNetPay" class="ndata">0.00</td>
+      </tr>
+    </tfoot>
+  </table>
+  <div>
+    <label>Enter Employee Number to Edit or Delete</label>
+    <input id="delemployee" type="number">
+    <button type="edit" id="btnedit">Edit</button>
+    <button id="btndelete">Delete</button>
+    <button id="btndeleteall">Delete All</button>
+  </div>  
+</div>
+<dialog id="dlgConfirmSubmit">
+  <form method="dialog">
+    <h4>Submit this information?</h4>
+    <div class="dlgbuttons">
+      <button id="btnSubmitConfirm" value="confirm">Confirm</button>
+      <button id="btnSubmitCancel" value="cancel">Cancel</button>
+    </div>
+  </form>
+</dialog>
+<dialog id="dlgConfirmEdit">
+  <form method="dialog">
+    <h4 id="edtmsg"></h4>
+    <div class="dlgbuttons">
+      <button id="btnConfirm" value="confirm">Confirm</button>
+      <button id="btnCancel" value="cancel">Cancel</button>
+    </div>
+  </form>
+</dialog>
+<dialog id="dlgConfirmCancel">
+  <form method="dialog">
+    <h4 id="dlgmsg"></h4>
+    <div class="dlgbuttons">
+      <button id="btnConfirm" value="confirm">Confirm</button>
+      <button id="btnCancel" value="cancel">Cancel</button>
+    </div>
+  </form>
+</dialog>
+<dialog id="dlgAreYouSure">
+  <form method="dialog">
+    <h4 id="dlgmsg2"></h4>
+    <div class="dlgbuttons">
+      <button id="btnYes" value="yes">Yes</button>
+      <button id="btnNo" value="no">No</button>
+    </div>
+  </form>
+</dialog>
+<a href="index.html" class="link">Back to Home Page</a>
+</body>
+<footer>
+</footer>
+</html>
